@@ -1,0 +1,131 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+  
+    background-image: url("phonebooth.jpeg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+  }
+  .center_input {
+    width: 10%;
+    display: flex;
+    padding-left: 800px;
+    padding-top: 100px;
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+.wrapper{
+  max-width: 300px;
+  
+  /* margin: 150px auto; */
+  margin-top: 150px;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.search-input{
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.search-input input{
+  /* margin-top: 100px; */
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+#contact-input{
+ width: 10%;
+margin-left:100%;
+/* margin-top: 100pz; */
+}
+.form-group{
+  display: flex;
+  margin-top: 50px;
+  width: 30%;
+  margin-left:60% ;
+
+}
+#delete-input{
+  width: 30%;
+ margin-left: 50%;
+ /* margin-top: 100pz; */
+ }
+ .form-group1{
+   display: flex;
+   margin-top: 10px;
+   width: 30%;
+   margin-left:60% ;
+ 
+ }
